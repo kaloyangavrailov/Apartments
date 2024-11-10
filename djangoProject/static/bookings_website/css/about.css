@@ -1,0 +1,17 @@
+body {
+    width: 1920px;
+    margin: 0 auto;
+
+}
+
+.about-container > p:first-child {
+    font-size: 3em;
+    text-align: center;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 2em;
+}
+
+.about-container > p:last-child {
+    font-size: 2em;
+    text-align: center;
+}

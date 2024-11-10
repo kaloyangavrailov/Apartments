@@ -1,0 +1,103 @@
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.color-accent {
+    background-color: lightgray;
+}
+
+.profile-page-main-container {
+    display: flex;
+    gap: 1em;
+}
+
+.profile-container {
+    display: flex;
+    flex-flow: column;
+    max-width: 30%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.profile-container > img {
+    max-width: 150px;
+    max-height: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.profile-container > p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+.profile-container > .profile-info {
+    display: flex;
+    flex-flow: column;
+}
+
+.profile-container > .profile-info > p {
+    margin: 0;
+}
+
+.profile-container > .profile-info > button {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.bookings-and-reviews-container {
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+}
+
+.reviews-container {
+    display: none;
+}
+
+form {
+    display: block;
+}
+
+.bookings-container {
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+.section-1 > p {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-1 > .bookings-list-navbar {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    padding: 1em;
+}
+
+.section-1 > .bookings-list-navbar > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5em;
+}

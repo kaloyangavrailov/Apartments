@@ -1,0 +1,115 @@
+@import url('apartment-card.css');
+@import url('review.css');
+body {
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+header, main, footer {
+    background-color: white;
+    
+}
+
+.home-page-main-container {
+    display: flex;
+    flex-flow: column;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: center;
+}
+
+.navbar > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 0.5em;
+    gap: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo > a > img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    padding-top: 1em;
+}
+
+.section-1 {
+    background-image: url("media/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+}
+
+.section-1 > p {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    position: relative;
+    top: 200px;
+}
+
+.section-2 {
+    display: flex;
+    flex-flow: column;
+}
+
+.listings-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-2 > p, .section-3 > p {
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.section-2 > button {
+    width: 15%;
+    align-self: center;
+}
+
+button > a {
+    color: white;
+}
+
+.section-3 {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 2em;
+}
+
+.main-review-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > ul {
+    font-size: 1.3em;
+    list-style: none;
+    opacity: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    border-top: 3px solid grey;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}

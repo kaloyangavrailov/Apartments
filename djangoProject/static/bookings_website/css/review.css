@@ -1,0 +1,34 @@
+.review-card {
+    background-color: lightgray;
+    width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3em;
+    margin: 0;
+    padding: 0;
+}   
+
+img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    margin-bottom: 1em;
+}
+
+.score-container {
+    display: flex;
+    gap: 2em;
+}
+
+.review-content {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.reviewer-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}

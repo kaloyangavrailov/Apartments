@@ -1,0 +1,71 @@
+body {
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+.main-container {
+    background-color: white;
+    max-width: 350px;
+    /* height: 750px; */
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.form-container > p:first-of-type {
+    font-size: 3em;
+    font-weight: bold;
+    padding-bottom: 1.5em;
+}
+
+.or-login-container > p:last-of-type {
+    margin-bottom: 0;
+    opacity: 50%;
+}
+
+.or-login-container {
+    padding-bottom: 2em;
+}
+
+form {
+    display: flex;
+    gap: 1em;
+    flex-flow: column;
+    padding: 2em;
+}
+
+label {
+    align-self: baseline;
+    padding-left: 0.5em;
+    opacity: 50%;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    font-weight: bold;
+    opacity: 50%;
+}
+
+button {
+    padding: 0.5em;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+.or-login-container > a {
+    text-transform: uppercase;
+}

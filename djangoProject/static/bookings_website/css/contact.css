@@ -1,0 +1,31 @@
+body {
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    padding: 5em;
+}
+
+.request-call-container, .email-container, .call-container {
+    background-color: lightgray;
+}
+
+.contact-main-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.subcontainer-2 {
+    display: flex;
+    flex-flow: row;
+    gap: 1em;
+}
+
+.request-call-container {
+    padding: 1em;
+}
+
+.request-call-container > form {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+}
