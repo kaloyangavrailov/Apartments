@@ -1,0 +1,45 @@
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+.reviews-main-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.section-1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.section-1 > p {
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px solid grey;
+    padding-bottom: 0.5em;
+}
+
+.section-1 > ul {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+.section-1 > ul > li {
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 50%;
+}
+
+.section-1 > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+

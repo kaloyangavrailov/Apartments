@@ -1,0 +1,41 @@
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: auto;
+
+}
+
+.reservation-make-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.reservation-make-container > p:first-of-type {
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid grey;
+    padding-bottom: 2em;
+}
+
+.reservation-make-container > form {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+    width: 100%;
+    border: 1px solid grey;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.reservation-make-container > form > input {
+    font-size: 0.7em;
+}
+
+.reservation-make-container > form > button {
+    font-size: 1em;
+    padding: 0.5em;
+}
+

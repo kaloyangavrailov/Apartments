@@ -1,0 +1,40 @@
+body {
+    max-width: 1920px;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.profile-edit-main-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.profile-edit-main-container > p {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px solid grey;
+    padding: 1em;
+    margin: 1em;
+}
+
+.profile-edit-main-container > form {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5em;
+    border: 1px solid grey;
+    padding: 1.5em;
+    border-radius: 5px;
+}
+
+.profile-edit-main-container > form > button {
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+p, form {
+    width: 20%;
+}
