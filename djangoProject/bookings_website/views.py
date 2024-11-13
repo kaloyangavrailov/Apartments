@@ -30,16 +30,16 @@ def profile_edit(request,pk):
 def profile_delete(request,pk):
     pass
 
-def reviews(request):
+def reviews_catalogue(request):
     pass
 
-def reviews_write(request):
+def review_write(request):
     pass
 
-def reviews_edit(request,pk):
+def review_edit(request,pk):
     pass
 
-def reviews_delete(request,pk):
+def review_delete(request,pk):
     pass
 
 def contact(request):
