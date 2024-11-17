@@ -1,0 +1,29 @@
+body {
+    max-width: 1920px;
+    margin: 5 auto;
+    height: auto;
+}
+
+.review-container {
+    display: flex;
+    flex-flow: column;
+    max-width: 30%;
+    max-height: auto;
+    padding: 1em;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.review-container > p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+}
+
+form > button {
+    margin-top: 0.5em;
+}
+
