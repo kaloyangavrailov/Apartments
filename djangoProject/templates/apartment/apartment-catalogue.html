@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/apartment-catalogue.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="main-apartment-catalogue-main-container">
+{% extends 'base.html' %}
+{% block content %}
+<div class="main-apartment-catalogue-main-container">
         <form action="">
             <div class="location">
                 <label for="location">Location</label>
@@ -137,5 +130,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}

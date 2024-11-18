@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/apartment-page.css">
-    <script src="js/apartment-page.js"></script>
-    <script src="https://kit.fontawesome.com/215e6dddbe.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
-<body>
-    <div class="apartment-page-main-container">
+{% extends 'base.html' %}
+{% block content %}
+<div class="apartment-page-main-container">
         <header>
             <div class="container-1">
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -236,8 +227,6 @@
                     <button type="submit">Reserve</button>
                 </form>
             </div>
-            </div>
         </main>
     </div>
-</body>
-</html>
+{% endblock %}

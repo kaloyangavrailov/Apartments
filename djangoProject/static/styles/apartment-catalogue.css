@@ -1,10 +1,4 @@
 @import url(apartment-card.css);
-
-body {
-    max-width: 1920px;
-    margin: 2em auto;
-}
-
 .main-apartment-catalogue-main-container {
     display: flex;
     flex-flow: column;

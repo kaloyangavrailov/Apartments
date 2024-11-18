@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reservation-make.css">
-</head>
-<body>
+{% extends 'base.html'%}
+{% block content %}
     <div class="reservation-make-container">
         <p>Please fill in the below information to finalize your reservation</p>
         <form action="">
@@ -28,5 +21,4 @@
             <button type="submit">Book!</button>
         </form>
     </div>
-</body>
-</html>
+{% endblock %}

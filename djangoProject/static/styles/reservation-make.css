@@ -1,11 +1,3 @@
-body {
-    max-width: 1920px;
-    margin: 0 auto;
-    max-width: 500px;
-    max-height: auto;
-
-}
-
 .reservation-make-container {
     display: flex;
     flex-flow: column;

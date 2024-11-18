@@ -1,32 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="review-write-edit-delete.css">
-</head>
-<body>
-    <div class="review-container">
-        <p>Review</p>
-        <form action="">
-            <label for="apartment-name">Apartment name:</label>
-            <input type="text" name="apartment-name" id="apartment-name">
+{% extends 'base.html' %}
+{% block content %}
+<div class="review-container">
+    <p>Review</p>
+    <form action="">
+        <label for="apartment-name">Apartment name:</label>
+        <input type="text" name="apartment-name" id="apartment-name">
 
-            <label for="reviewer-name">Reviewer name:</label>
-            <input type="text" name="reviewer-name" id="reviewr-name">
-            
-            <label for="check-in-date">Check-in date</label>
-            <input type="text" name="check-in-date" id="check-in-date">
-
-            <label for="check-out-date">Check-out date</label>
-            <input type="text" name="check-out-date" id="check-out-date">
-
-            <label for="review-text">Write your review below:</label>
-            <textarea name="review-text" id="review-text"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+        <label for="reviewer-name">Reviewer name:</label>
+        <input type="text" name="reviewer-name" id="reviewr-name">
         
-    </div>
-</body>
-</html>
+        <label for="check-in-date">Check-in date</label>
+        <input type="text" name="check-in-date" id="check-in-date">
+
+        <label for="check-out-date">Check-out date</label>
+        <input type="text" name="check-out-date" id="check-out-date">
+
+        <label for="review-text">Write your review below:</label>
+        <textarea name="review-text" id="review-text"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

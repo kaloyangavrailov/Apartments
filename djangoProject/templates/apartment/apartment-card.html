@@ -1,48 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/215e6dddbe.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/apartment-card.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="main-apartment-card-container">
-        <div class="apartment-card-subcontainer">
-            <div class="apartment-card-section-1">
-                <div class="price-like-share">
-                    <p>from 1111</p>
-                    <div class="logos">
-                        <i class="fa-solid fa-share-nodes"></i>
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
+{% extends 'base.html' %}
+{% block content %}
+<div class="main-apartment-card-container">
+    <div class="apartment-card-subcontainer">
+        <div class="apartment-card-section-1">
+            <div class="price-like-share">
+                <p>from 1111</p>
+                <div class="logos">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
                 </div>
             </div>
-            <div class="apartment-card-section-2">
-                <p>Lorem, ipsum dolor.</p>
-                <p><span>Lorem ipsum dolor sit,</span> amet consectetur.</p>
-                <p><span>Lorem:</span>ipsum dolor.</p>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-door-open"></i>
-                        <p>2 rooms</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bed"></i>
-                        <p>2 beds</p>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-person"></i>
-                        <p>3 persons</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="apartment-card-section-3">
-                <button><a href="#">book now</a></button>
-            </div>
-        </div>        
-    </div>
-</body>
-</html>
+        </div>
+        <div class="apartment-card-section-2">
+            <p>Lorem, ipsum dolor.</p>
+            <p><span>Lorem ipsum dolor sit,</span> amet consectetur.</p>
+            <p><span>Lorem:</span>ipsum dolor.</p>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-door-open"></i>
+                    <p>2 rooms</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bed"></i>
+                    <p>2 beds</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-person"></i>
+                    <p>3 persons</p>
+                </li>
+            </ul>
+        </div>
+        <div class="apartment-card-section-3">
+            <button><a href="#">book now</a></button>
+        </div>
+    </div>        
+</div>
+{% endblock %}

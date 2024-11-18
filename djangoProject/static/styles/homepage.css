@@ -1,14 +1,26 @@
 @import url('apartment-card.css');
 @import url('review.css');
+@import url('about.css');
+@import url('apartment-catalogue.css');
+@import url('contact.css');
+@import url('login.css');
+@import url('profile-details.css');
+@import url('profile-edit-delete.css');
+@import url('reservation-make.css');
+@import url('reservations-catalogue.css');
+@import url('review-write-edit-delete.css');
+@import url('reviews-catalogue.css');
+
+
 body {
     max-width: 1920px;
     height: auto;
     margin: 0 auto;
-    background-color: lightgrey;
+    background-color: #5b6c5d;
 }
 
 header, main, footer {
-    background-color: white;
+    background-color: #59c9a5;
     
 }
 
@@ -48,7 +60,7 @@ a {
 }
 
 .section-1 {
-    background-image: url("media/banner.jpg");
+    background-image: url("static/media/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

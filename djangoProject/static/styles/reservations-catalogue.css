@@ -1,9 +1,3 @@
-body {
-    max-width: 1920px;
-    margin: 0 auto;
-
-}
-
 .reviews-main-section {
     display: flex;
     flex-flow: column;

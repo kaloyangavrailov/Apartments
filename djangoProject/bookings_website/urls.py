@@ -2,8 +2,9 @@ from django.urls import path,include
 from bookings_website import views
 urlpatterns = [
     path('', views.index, name='index'),
-    path('apartments-catalogue/', views.apartments_catalogue, name='apartments-catalogue'),
-    path('apartment-details/', views.apartment_details, name='apartment-details'),
+    path('log-in/', views.profile_log_in, name='profile_log_in'),
+    path('apartments-catalogue/', views.apartments_catalogue, name='apartments_catalogue'),
+    path('apartment-details/', views.apartment_details, name='apartment_details'),
     path('reservations/', include([
         path('', views.reservations, name='reservations'),
         path('edit/', views.reservations_edit, name='reservations_edit'),

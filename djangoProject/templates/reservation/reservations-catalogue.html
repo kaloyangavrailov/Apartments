@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reservations-catalogue.css">
-</head>
-<body>
-    <div class="reviews-main-section">
+{% extends 'base.html' %}
+{% block content %}
+<div class="reviews-main-section">
         <div class="section-1">
             <p>Bookings list</p>
             <ul class="bookings-list-navbar">
@@ -83,5 +76,4 @@
             </table> 
         </div>
     </div>
-</body>
-</html>
+{% endblock %}

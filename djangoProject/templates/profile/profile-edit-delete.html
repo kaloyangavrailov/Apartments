@@ -1,38 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profile-edit-delete.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="profile-edit-main-container">
-        <p>Edit profile info</p>
-        <form action="">
-            <label for="profile-first-name">First name:</label>
-            <input type="text" name="profile-first-name">
+{% extends 'base.html' %}
+{% block content %}
+<div class="profile-edit-main-container">
+    <p>Edit profile info</p>
+    <form action="">
+        <label for="profile-first-name">First name:</label>
+        <input type="text" name="profile-first-name">
 
-            <label for="profile-last-name">Last name:</label>
-            <input type="text" name="profile-last-name">
+        <label for="profile-last-name">Last name:</label>
+        <input type="text" name="profile-last-name">
 
-            <label for="profile-age">Age:</label>
-            <input type="number" name="profile-age">
+        <label for="profile-age">Age:</label>
+        <input type="number" name="profile-age">
 
-            <label for="profile-address">Address:</label>
-            <input type="profile-address">
+        <label for="profile-address">Address:</label>
+        <input type="profile-address">
 
-            <label for="profile-country">Country:</label>
-            <input type="text">
+        <label for="profile-country">Country:</label>
+        <input type="text">
 
-            <label for="profile-phone-number">Phone number:</label>
-            <input type="text">
+        <label for="profile-phone-number">Phone number:</label>
+        <input type="text">
 
-            <label for="profile-email">Email:</label>
-            <input type="email" name="profile-email">
+        <label for="profile-email">Email:</label>
+        <input type="email" name="profile-email">
 
-            <button type="submit">Edit</button>
-        </form>
-    </div>
-</body>
-</html>
+        <button type="submit">Edit</button>
+    </form>
+</div>
+{% endblock %}
