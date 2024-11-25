@@ -77,7 +77,7 @@ img {
 }
 
 .apartment-card-section-1 {
-    background-image: url("media/bad-apartment1.jpg");
+    background-image: url("static/media/bad-apartment1.jpg");
     height: 280px;
     background-repeat: no-repeat;
     background-position: center center;

@@ -10,18 +10,39 @@
 @import url('reservations-catalogue.css');
 @import url('review-write-edit-delete.css');
 @import url('reviews-catalogue.css');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 "Red Hat Text", "Red Hat Display", Verdana, Helvetica, sans-serif;
+}
+
+body, input, button, table {
+    font: inherit
+}
 
 body {
     max-width: 1920px;
-    height: auto;
+    max-height: 1020px;
     margin: 0 auto;
     background-color: #5b6c5d;
 }
 
 header, main, footer {
     background-color: #59c9a5;
-    
+    color: white;
 }
 
 .home-page-main-container {
@@ -41,15 +62,28 @@ header {
 .navbar > ul {
     display: flex;
     list-style-type: none;
-    gap: 0.5em;
     gap: 1em;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.navbar > ul > li > a {
+    font-size: 1.5em;
+    opacity: 1;
+}
+
+.navbar > ul > li > a:hover {
+    color: #ef6f6c;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
-
 .logo > a > img {
     width: 50px;
     height: 50px;
@@ -60,24 +94,30 @@ a {
 }
 
 .section-1 {
-    background-image: url("static/media/banner.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 600px;
+    padding: 10em;
 }
 
 .section-1 > p {
     text-align: center;
-    font-size: 3em;
     color: white;
-    position: relative;
-    top: 200px;
+    position: initial;
+    border: none;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.section-1 > p > span {
+    color: #ef6f6c;
 }
 
 .section-2 {
     display: flex;
     flex-flow: column;
+    border-bottom: 3px solid #5b6c5d;
+    border-top: 3px solid #5b6c5d;
+    padding: 2em;
 }
 
 .listings-container {
@@ -100,6 +140,14 @@ button > a {
     color: white;
 }
 
+button > a:hover {
+    color: #ef6f6c;
+}
+
+.section-2 > button > a:hover{
+    color: #ef6f6c;
+}
+
 .section-3 {
     display: flex;
     flex-flow: column;
@@ -112,16 +160,137 @@ button > a {
 }
 
 footer > ul {
-    font-size: 1.3em;
+    font-size: 2em;
     list-style: none;
-    opacity: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+
 footer {
-    border-top: 3px solid grey;
+    border-top: 3px solid #5b6c5d;
     padding-top: 2em;
     padding-bottom: 2em;
+    position: sticky;
+    bottom: 0;
+}
+
+footer > ul > li > a {
+    opacity: 1;
+}
+
+footer > ul > li > a:hover {
+    color: #ef6f6c;
+}
+
+.main-apartment-card-container {
+    background-color:#465775 ;
+    border-radius: 2em;
+}
+
+.review-card {
+    background-color: #465775;
+    height: auto;
+    box-sizing: border-box;
+    gap: 0.7em;
+    padding: 2em;
+}
+
+.review-card > .review-content {
+    width: 100%;
+}
+
+.review-card > .reviewer-name {
+    width: 100%;
+    text-align: center;
+}
+
+.section-3 > p , .section-2 > p {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    align-self: center;
+    font-weight: bold;
+    font-size: 3em;
+    width: 100%;
+}
+
+.main-review-card-container {
+    margin-bottom: 2em;
+}
+
+.section-2 > button {
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+.section-2 > button > a {
+    color: white;
+    opacity: 1;
+}
+
+.apartment-card-section-2 > p {
+    width: 100%;
+}
+
+.apartment-card-section-2 {
+    gap: 1em;
+}
+
+.listings-container > .main-apartment-card-container > .apartment-card-subcontainer > .apartment-card-section-3
+ > button > a {
+    opacity: 1;
+    font-size: 1.3em;
+}
+
+.price-like-share > p, .logos {
+    background-color: #5b6c5d;
+    color: white;
+}
+
+.main-container {
+    background-color: #465775;
+    align-self: center;
+    max-width: 750px;
+    margin: 2em;
+}
+
+.main-container > p, button, label, a {
+    color: white;
+}
+
+.form-container > p:first-of-type {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.or-login-container > p:last-of-type {
+    color: white;
+}
+
+.form-container > form {
+    width: 100%;
+}
+
+.or-login-container > p:last-of-type {
+    width: 100%;
+}
+
+.form-container > form > button {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.form-container > form > button:hover {
+    color: #ef6f6c;
+}
+
+.form-container > form > p > a:hover, .or-login-container > a:hover {
+    color: #ef6f6c;
+}
+
+.form-container > form > input {
+    border: 1px solid #465775;
+    border-radius: 0.5em;
 }
