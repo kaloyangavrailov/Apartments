@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+
 {% block content %}
 <div class="reviews-main-section">
         <div class="section-1">
@@ -29,8 +30,9 @@
                 <td>str. Romanov 1, Sunny Beach, Bulgaria</td>
                 <td>088888888</td>
                 <td>email@email.email</td>
-                <td><a href="#"><button>Review</button></a></td>
-                <td><a href="#"><button>Edit</button></a></td>
+                <td><a href="{% url 'reservations_edit' %}"><button>Edit</button></a></td>
+                <td><a href="{% url 'reservations_delete' %}"><button>Delete</button></a></td>
+                <td><a href="{% url 'review_write' %}"><button>Review</button></a></td>
             </table> 
             <table>
                 <tr>
@@ -50,8 +52,9 @@
                 <td>str. Romanov 1, Sunny Beach, Bulgaria</td>
                 <td>088888888</td>
                 <td>email@email.email</td>
-                <td><a href="#"><button>Review</button></a></td>
-                <td><a href="#"><button>Edit</button></a></td>
+                <td><a href="{% url 'reservations_edit' %}"><button>Edit</button></a></td>
+                <td><a href="{% url 'reservations_delete' %}"><button>Delete</button></a></td>
+                <td><a href="{% url 'review_write' %}"><button>Review</button></a></td>
             </table> 
             <table>
                 <tr>
@@ -71,8 +74,9 @@
                 <td>str. Romanov 1, Sunny Beach, Bulgaria</td>
                 <td>088888888</td>
                 <td>email@email.email</td>
-                <td><a href="#"><button>Review</button></a></td>
-                <td><a href="#"><button>Edit</button></a></td>
+                <td><a href="{% url 'reservations_edit' %}"><button>Edit</button></a></td>
+                <td><a href="{% url 'reservations_delete' %}"><button>Delete</button></a></td>
+                <td><a href="{% url 'review_write' %}"><button>Review</button></a></td>
             </table> 
         </div>
     </div>

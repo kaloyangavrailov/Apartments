@@ -28,6 +28,7 @@
             <li><a href="{% url 'apartments_catalogue' %}">Apartments</a></li>
             <li><a href="{% url 'apartments_catalogue' %}">Reserve</a></li>
             <li><a href="{% url 'reservations' %}">My Reservations</a></li>
+            <li><a href="{% url 'reviews_catalogue' %}">My Reviews</a></li>
         </ul>
     </div>
         </header>
@@ -36,8 +37,8 @@
     </div>
     <footer>
     <ul>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
     </ul>
 </footer>
 </body>

@@ -39,7 +39,7 @@
                         </ul>
                     </div>
                     <div class="apartment-card-section-3">
-                        <button><a href="#">book now</a></button>
+                        <button><a href="{% url 'reservations_make' %}">book now</a></button>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
                     <div class="apartment-card-section-3">
-                        <button><a href="#">book now</a></button>
+                        <button><a href="{% url 'reservations_make' %}">book now</a></button>
                     </div>
                 </div>
             </div>
@@ -111,12 +111,12 @@
                         </ul>
                     </div>
                     <div class="apartment-card-section-3">
-                        <button><a href="#">book now</a></button>
+                        <button><a href="{% url 'reservations_make' %}">book now</a></button>
                     </div>
                 </div>
             </div>
         </div>
-        <button><a href="#">browse more</a></button>
+        <button><a href="{% url 'apartments_catalogue' %}">browse more</a></button>
     </div>
     <div class="section-3">
         <p>guest reviews</p>

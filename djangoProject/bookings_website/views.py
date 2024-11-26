@@ -13,6 +13,9 @@ def apartment_details(request):
 def reservations(request):
     return render(request, 'reservation/reservations-catalogue.html')
 
+def reservations_make(request):
+    return render(request, 'reservation/reservation-make-edit-delete.html')
+
 def reservations_edit(request):
     return render(request, 'reservation/reservation-make-edit-delete.html')
 

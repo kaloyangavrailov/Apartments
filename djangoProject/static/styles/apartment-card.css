@@ -21,7 +21,7 @@
 .apartment-card-subcontainer {
     display: flex;
     flex-flow: column;
-    border: 1px solid lightgray;
+    border: 2px solid white;
     border-radius: 10px;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .apartment-card-section-2 > p:last-of-type > span {
-    font-weight: 900t
+    font-weight: 900;
 }
 
 .apartment-card-section-2 {
@@ -105,9 +105,5 @@ a {
 
 button {
     background-color: rgb(93, 93, 190);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     border-radius: 5px;
 }

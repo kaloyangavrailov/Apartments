@@ -29,15 +29,16 @@ html {
     font: 14px/1.5 "Red Hat Text", "Red Hat Display", Verdana, Helvetica, sans-serif;
 }
 
-body, input, button, table {
-    font: inherit
-}
-
 body {
+    font: inherit;
     max-width: 1920px;
-    max-height: 1020px;
+    height: auto;
     margin: 0 auto;
     background-color: #5b6c5d;
+}
+
+input, button, table {
+    font: inherit
 }
 
 header, main, footer {
@@ -115,8 +116,8 @@ a {
 .section-2 {
     display: flex;
     flex-flow: column;
-    border-bottom: 3px solid #5b6c5d;
-    border-top: 3px solid #5b6c5d;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
     padding: 2em;
 }
 
@@ -169,7 +170,7 @@ footer > ul {
 
 
 footer {
-    border-top: 3px solid #5b6c5d;
+    border-top: 2px solid white;
     padding-top: 2em;
     padding-bottom: 2em;
     position: sticky;
@@ -291,6 +292,171 @@ footer > ul > li > a:hover {
 }
 
 .form-container > form > input {
-    border: 1px solid #465775;
+    border: 1px solid white;
     border-radius: 0.5em;
+}
+
+.profile-page-container {
+    align-self: center;
+}
+
+.profile-page-container > .profile-info > p {
+    width: 100%;
+}
+
+
+.profile-page-container > .profile-info > button {
+    margin-top: 1em;
+}
+
+.profile-page-container > .profile-info > button> a:hover {
+    color: #ef6f6c;
+}
+
+.profile-page-container > .profile-info > p > span {
+    opacity: 0.7;
+}
+
+.profile-page-container > .profile-info > p:first-of-type {
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.profile-page-container > .profile-info > button > a {
+    color: white;
+    opacity: 1;
+    font-size: 1.1em;
+}
+
+.main-apartment-catalogue-main-container > form {
+    flex-flow: column;
+    align-self: center;
+    width: 30%;
+}
+
+.catalogue-apartment-cards {
+    gap: 1em;
+}
+
+.main-apartment-catalogue-main-container > form > label {
+    justify-self: flex-end;
+}
+
+.reviews-main-section {
+    align-self: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.reviews-main-section a {
+    color: white;
+    opacity: 1;
+}
+
+.reviews-main-section a:hover {
+    color: #ef6f6c;
+}
+
+.reviews-main-section > .section-2 a:hover {
+    color: #ef6f6c;
+}
+
+.reservation-make-container > p {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.reservation-make-container > form {
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.reservation-make-container > form > input {
+    font-size: 1.5em;
+}
+
+.review-container {
+    align-self: center;
+    width: 50%;
+    background-color: #465775;
+}
+
+.review-container > p {
+    align-self: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.review-container > form {
+    width: 100%;
+}
+
+.reviews-section-1 > p {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2em;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.done-reviews-container {
+    align-self: center;
+    margin-bottom: 2em;
+}
+
+.reviews-section-2 > p {
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.upcoming-reviews-container {
+    align-self: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.contact-main-container {
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.contact-main-container > .subcontainer-1 > p {
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+
+.contact-main-container > .subcontainer-2 > .subcontainer-2-1 > .request-call-container >p, form {
+    width: 100%;
+}
+
+.contact-main-container > .subcontainer-2 > .subcontainer-2-1 > .request-call-container >p {
+    text-align: center;
+}
+
+.contact-main-container > .subcontainer-2 > .subcontainer-2-1 > .subcontainer-2-2 > .call-container > p, .email-container > p {
+    width: 100%;
+}
+
+.contact-main-container > .subcontainer-2 > .subcontainer-2-1 > .subcontainer-2-2 > .call-container > p:first-of-type {
+    width: 100%;
+}
+
+.about-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.about-container > p {
+    width: 50%;
 }

@@ -23,8 +23,8 @@
                 animi tenetur non! Consequuntur beatae sequi culpa repellat autem eos hic?</p>
             <p class="reviewer-name">Lorem Ipsum</p>
             <div class="button-section">
-                <button>Edit</button>
-                <button>Delete</button>
+                <button><a href="{% url 'review_edit' %}">Edit</a></button>
+                <button><a href="{% url 'review_delete' %}">Delete</a></button>
             </div>
         </div>
         <div class="review-card">
@@ -47,8 +47,8 @@
                 animi tenetur non! Consequuntur beatae sequi culpa repellat autem eos hic?</p>
             <p class="reviewer-name">Lorem Ipsum</p>
             <div class="button-section">
-                <button>Edit</button>
-                <button>Delete</button>
+                <button><a href="{% url 'review_edit' %}">Edit</a></button>
+                <button><a href="{% url 'review_delete' %}">Delete</a></button>
             </div>
         </div>
         <div class="review-card">
@@ -71,8 +71,8 @@
                 animi tenetur non! Consequuntur beatae sequi culpa repellat autem eos hic?</p>
             <p class="reviewer-name">Lorem Ipsum</p>
             <div class="button-section">
-                <button>Edit</button>
-                <button>Delete</button>
+                <button><a href="{% url 'review_edit' %}">Edit</a></button>
+                <button><a href="{% url 'review_delete' %}">Delete</a></button>
             </div>
         </div>
     </div>
@@ -113,7 +113,7 @@
                     </ul>
                 </div>
                 <div class="apartment-card-section-3">
-                    <button><a href="#">review now</a></button>
+                    <button><a href="{% url 'review_write' %}">review now</a></button>
                 </div>
             </div>
         </div>
@@ -150,7 +150,7 @@
                     </ul>
                 </div>
                 <div class="apartment-card-section-3">
-                    <button><a href="#">review now</a></button>
+                    <button><a href="{% url 'review_write' %}">review now</a></button>
                 </div>
             </div>
         </div>
@@ -187,7 +187,7 @@
                     </ul>
                 </div>
                 <div class="apartment-card-section-3">
-                    <button><a href="#">review now</a></button>
+                    <button><a href="{% url 'review_write' %}">review now</a></button>
                 </div>
             </div>
         </div>
